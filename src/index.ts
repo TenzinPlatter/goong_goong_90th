@@ -16,6 +16,10 @@ img.addEventListener("click", () => {
 	img.style.top = "-80%";
 	img.style.transition = "1.5s ease-in";
 
+	setTimeout(() => {
+		img.style.display = "none";
+	}, 2000);
+
 	const hint = <HTMLElement>document.querySelector(".hint")!;
 	hint.style.display = "none";
 

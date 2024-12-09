@@ -8,12 +8,16 @@ const img = document.createElement("img");
 img.src = babyPNG;
 img.classList.add("goong-goong");
 let hasClicked: boolean = false;
+
 img.addEventListener("click", () => {
 	if (hasClicked) return;
 	hasClicked = true;
 
 	img.style.top = "-80%";
 	img.style.transition = "1.5s ease-in";
+
+	const hint = <HTMLElement>document.querySelector(".hint")!;
+	hint.style.display = "none";
 
 	setTimeout(() => {
 		info.style.display = "flex";
@@ -32,4 +36,9 @@ img.addEventListener("click", () => {
 	}, 2000);
 });
 
+const clickMe = document.createElement("div");
+clickMe.textContent = "Click (or tap) the picture!";
+clickMe.classList.add("hint");
+
 body.appendChild(img);
+body.appendChild(clickMe);

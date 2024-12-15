@@ -1,5 +1,5 @@
 import "./styles.css"
-import babyPNG from "./assets/goong_goong.png"
+import babyPNG from "./assets/don_collage.png"
 
 const body = document.querySelector("body")!;
 

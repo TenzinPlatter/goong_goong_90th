@@ -12,7 +12,10 @@ body {
 
 img.goong-goong {
 	position: absolute;
-	width: 100vw;
+	width: 70vw;
+	max-height: 80vh;
+	height: auto;
+	object-fit: contain;
 	top: 50%;
 	left: 50%;
 	translate: -50% -50%;

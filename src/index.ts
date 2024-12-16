@@ -1,11 +1,11 @@
 import "./styles.css"
-import babyPNG from "./assets/don_collage.png"
+import collagePNG from "./assets/collage.png"
 
 const body = document.querySelector("body")!;
 
 const info = <HTMLElement>document.querySelector(".info")!;
 const img = document.createElement("img");
-img.src = babyPNG;
+img.src = collagePNG;
 img.classList.add("goong-goong");
 let hasClicked: boolean = false;
 
